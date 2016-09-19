@@ -55,7 +55,7 @@ plugins=(git, zsh-autosuggestions)
 
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
-
+bindkey "^ " autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
 
