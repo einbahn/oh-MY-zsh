@@ -1,8 +1,8 @@
 #!/bin/bash
 if hash dnf 2> /dev/null; then
-	sudo dnf install zsh git curl
+	sudo dnf install zsh git curl autojump
 else 
-	sudo apt-get install zsh git curl
+	sudo apt-get install zsh git curl autojump
 fi
 
 # Install oh my zsh
