@@ -11,5 +11,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 #Install the autocomplete suggestions
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
+SCRIPT=$(readlink -f "$0")
+# Absolute path this script is in
+SCRIPTPATH=$(dirname "$SCRIPT")
+
 # Copy the .zshrc file
-cp zshrc /home/$USER/.zshrc
+sudo ln -s $SCRIPTPATH/zshrc ~/.zshrc
